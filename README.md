@@ -97,13 +97,13 @@ NAND gate as it is the series combination of an AND gate
 
 * **Transient Settings**
     - After the corner is being mentioned, we need to mention the transition time.
-<img src="https://user-images.githubusercontent.com/100553237/155984278-38e6ee28-5bf2-4bda-8785-70451e9864d1.jpg" width="500" height="500">
+<img src="https://user-images.githubusercontent.com/100553237/155984278-38e6ee28-5bf2-4bda-8785-70451e9864d1.jpg" width="750" height="500">
 
 * **waveform**
     - Post everything is given as the input, we need to go to _'Simulation->Netlist and Run'_ or use _'Ctrl+Shift+R'_.
     - So the waveform with the input values will be created and netlist will be generated
 <!-- [waveform](https://user-images.githubusercontent.com/100553237/155943842-0f44b1f1-bfa7-4651-9bf5-39883a76e179.png)-->
-  <img src="https://user-images.githubusercontent.com/100553237/155985068-b92ce0d7-eeb2-4f68-977c-4fb3918d35bd.jpg" width="500" height="500">
+ <img src="https://user-images.githubusercontent.com/100553237/155985569-d8c3a054-f6d0-4ca8-a34a-6589dbd1f756.png)" width="750" height="500">
 
 
 * **Netlist**
