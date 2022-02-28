@@ -50,25 +50,35 @@ NAND gate as it is the series combination of an AND gate
    - Before we create a schematic of the circuit, We should create a library so as to create a schematic view of the required circuit.
    - Use the bind key 'w' for wire connections, 'l' to create the labels, 'p' to assign the pins to the inputs and outputs.
    - After a schematic view is created, we have to design the circuit by importing the required mosfets from the tech library.
+   
 ![NAND_GATE_schematic](https://user-images.githubusercontent.com/100553237/155943109-b0b2b8a9-045d-4934-b5e2-5e4cdd83386c.png)
 
 * **Symbol**
    - After the schematic is being created, we need to build a symbol of the circuit so as to use the circuit in any other circuit and not to repeat the process of building the circuit from the scratch.
    - To build the symbol, go to Design->New CellView->From CellView or simply use the bind key 'Y' and you will see the below table.
+   
    - ![symbol](https://user-images.githubusercontent.com/100553237/155980257-8222f055-822e-4d31-b582-4a767b6a138c.jpg)
+   - After clicking OK, you will see the following symbol of the nand gate circuit.
 
 ![NAND_GATE_symbol](https://user-images.githubusercontent.com/100553237/155943162-87c62fa7-0e2a-40cc-92af-adca28ba4346.png)
 
 
 ## Test bench
 * **test bench schematic**
-![NAND_GATE_TB_schematic](https://user-images.githubusercontent.com/100553237/155943774-03d05755-f47c-4e58-aa03-78c603ec5b6d.png)
-
+- Now that we have created the symbol, we need to connect to the circuit to the required components i.e, voltage sources, clock pulses, output capacitor and ground.
+- By making use of the analog library, we need to import the above mentioned components.
+- You can see below the voltage, rise time, fall time, pulse width and time period of the clock pulse applied to one of the inputs.
+ 
 ### Params set for input voltage source A
 ![a_params](https://user-images.githubusercontent.com/100553237/155966093-b0dba843-ed76-4cb7-877c-c16b3927fea5.jpg)
 
+- You can see below the voltage, rise time, fall time, pulse width and time period of the clock pulse applied to another input.
+ 
 ### Params set for input voltage source B
 ![b_params](https://user-images.githubusercontent.com/100553237/155943531-5e11044d-1853-4b4d-9537-6dee876e8701.png)
+ 
+- After the output capacitor and ground connections are made, the circuit looks like below.
+![NAND_GATE_TB_schematic](https://user-images.githubusercontent.com/100553237/155943774-03d05755-f47c-4e58-aa03-78c603ec5b6d.png)
 
 * **Model files inclusion**
 ![model_file_inclusion](https://user-images.githubusercontent.com/100553237/155970354-bbe9cc2d-859a-46aa-87ac-3d2608fc2b36.jpg)
