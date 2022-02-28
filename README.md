@@ -64,7 +64,7 @@ NAND gate as it is the series combination of an AND gate
 
 
 ## Test bench
-* **test bench schematic**
+* test bench schematic*
 - Now that we have created the symbol, we need to connect to the circuit to the required components i.e, voltage sources, clock pulses, output capacitor and ground.
 - By making use of the analog library, we need to import the above mentioned components.
 - You can see below the voltage, rise time, fall time, pulse width and time period of the clock pulse applied to one of the inputs.
