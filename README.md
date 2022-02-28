@@ -20,6 +20,7 @@ Design and Analysis of two input NAND gate in 28nm CMOS technology using synopsy
   * [Primewave Log File](#primewave-log-file)
 * [Conclusion](#conclusion)
 * [Acknowledments](#acknowledgements)
+* [Author](#author)
 * [References](#references)
 
 ## Abstract
@@ -45,7 +46,7 @@ NAND gate as it is the series combination of an AND gate
 
 
 ## Circuit Designing
-* **Schematic Diagram**
+* **Schematic Diagram** 
 ![NAND_GATE_schematic](https://user-images.githubusercontent.com/100553237/155943109-b0b2b8a9-045d-4934-b5e2-5e4cdd83386c.png)
 
 * **Symbol**
@@ -283,6 +284,8 @@ Thus, the two input NAND gate is being designed and simulated with the 28nm CMOS
 * [Synopsys Inc](https://www.synopsys.com/company/contact-synopsys/office-locations/india.html)
 * [Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
 
+## Author
+ * Sudheer kumar pabbathi,Third year in Bachelor of Engineering in Electronics and Communication Engineering, Chaitanya Bharathi Institute of Electronics, Hyderabad-500075.
 ## References
 * [John Wawrzynek, CMOS Implementation Technologies (feature size ~ 28nm)](https://inst.eecs.berkeley.edu/~cs150/sp12/agenda/lec/lec09-CMOS.pdf)
 
