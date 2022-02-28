@@ -1,0 +1,2 @@
+# Two_input_NAND_gate
+Design_and_Analysis_of_two_input_NAND_gate_in_28nm_CMOS_technology_using_synopsys_customcompiler
