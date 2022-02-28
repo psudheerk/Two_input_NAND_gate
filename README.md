@@ -47,6 +47,7 @@ NAND gate as it is the series combination of an AND gate
 
 ## Circuit Designing
 * **Schematic Diagram** 
+   - Before we create a schematic of the circuit, We should create a library so as to create a schematic view of the required circuit.
 ![NAND_GATE_schematic](https://user-images.githubusercontent.com/100553237/155943109-b0b2b8a9-045d-4934-b5e2-5e4cdd83386c.png)
 
 * **Symbol**
