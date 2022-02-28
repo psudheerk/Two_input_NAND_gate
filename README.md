@@ -42,7 +42,7 @@ NAND gate as it is the series combination of an AND gate
 
 ## Reference circuit waveform
 <!-- ![Reference circuit waveform](https://user-images.githubusercontent.com/100553237/155942374-ce4c7dfc-6e9a-48de-9f05-7ced04e23dac.png)-->
-<img src="https://user-images.githubusercontent.com/100553237/155942374-ce4c7dfc-6e9a-48de-9f05-7ced04e23dac.png" width="750" height="550">
+<img src="https://user-images.githubusercontent.com/100553237/155942374-ce4c7dfc-6e9a-48de-9f05-7ced04e23dac.png" width="550" height="550">
 
 
 ## Circuit Designing
