@@ -12,7 +12,7 @@ Design and Analysis of two input NAND gate in 28nm CMOS technology using synopsy
   * [Test Bench Schematic](#test-bench-schematic) 
   * [Params set for input voltage source A](#params-set-for-input-voltage-source-A)
   * [Params set for input voltage source B](#Params-set-for-input-voltage-source-B)
-  * [Model files inclusion](#model-files-inclusion)
+  * [Model files inclusion](#Model-files-inclusion)
   * [Transient Settings](#transient-settings)
   * [waveform](#waveform)
   * [Netlist](#netlist)
