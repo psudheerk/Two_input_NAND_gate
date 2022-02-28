@@ -48,9 +48,15 @@ NAND gate as it is the series combination of an AND gate
 ## Circuit Designing
 * **Schematic Diagram** 
    - Before we create a schematic of the circuit, We should create a library so as to create a schematic view of the required circuit.
+   - Use the bind key 'w' for wire connections, 'l' to create the labels, 'p' to assign the pins to the inputs and outputs.
+   - After a schematic view is created, we have to design the circuit by importing the required mosfets from the tech library.
 ![NAND_GATE_schematic](https://user-images.githubusercontent.com/100553237/155943109-b0b2b8a9-045d-4934-b5e2-5e4cdd83386c.png)
 
 * **Symbol**
+   - After the schematic is being created, we need to build a symbol of the circuit so as to use the circuit in any other circuit and not to repeat the process of building the circuit from the scratch.
+   - To build the symbol, go to Design->New CellView->From CellView or simply use the bind key 'Y' and you will see the below table.
+   - ![symbol](https://user-images.githubusercontent.com/100553237/155980257-8222f055-822e-4d31-b582-4a767b6a138c.jpg)
+
 ![NAND_GATE_symbol](https://user-images.githubusercontent.com/100553237/155943162-87c62fa7-0e2a-40cc-92af-adca28ba4346.png)
 
 
