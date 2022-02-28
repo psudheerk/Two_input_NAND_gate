@@ -102,7 +102,9 @@ NAND gate as it is the series combination of an AND gate
 * **waveform**
     - Post everything is given as the input, we need to go to _'Simulation->Netlist and Run'_ or use _'Ctrl+Shift+R'_.
     - So the waveform with the input values will be created and netlist will be generated
-![waveform](https://user-images.githubusercontent.com/100553237/155943842-0f44b1f1-bfa7-4651-9bf5-39883a76e179.png)
+<!-- [waveform](https://user-images.githubusercontent.com/100553237/155943842-0f44b1f1-bfa7-4651-9bf5-39883a76e179.png)-->
+    <img src="https://user-images.githubusercontent.com/100553237/155985068-b92ce0d7-eeb2-4f68-977c-4fb3918d35bd.jpg" width=500 height=500>
+
 
 * **Netlist**
     - To access the netlist, go to _'Simulation->Netlist'_, you can see the netlist for this circuit.
