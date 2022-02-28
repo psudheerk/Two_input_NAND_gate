@@ -1,0 +1,65 @@
+*  Generated for: PrimeSim
+*  Design library name: NAND_GATE
+*  Design cell name: NAND_GATE_TB
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Wed Feb 23 19:36:31 2022
+
+.global gnd!
+********************************************************************************
+* Library          : NAND_GATE
+* Cell             : NAND_GATE
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt nand_gate a b gnd_1 vdd vout
+xm1 vout b vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm0 vout a vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm3 net13 b gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm2 vout a net13 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+.ends nand_gate
+
+********************************************************************************
+* Library          : NAND_GATE
+* Cell             : NAND_GATE_TB
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 a b gnd! net14 vout nand_gate
+v1 net14 gnd! dc=1.8
+v3 b gnd! dc=0 pulse ( 0 1.8 0 0.1u 0.1u 15u 30u )
+v2 a gnd! dc=0 pulse ( 0 1.8 0 0.1u 0.1u 5u 10u )
+c4 vout gnd! c=1p
+
+
+
+
+
+
+
+
+.tran '0.1u' '30u' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(a) v(b) v(vout)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
