@@ -55,7 +55,7 @@ NAND gate as it is the series combination of an AND gate
 
 * **Symbol**
    - After the schematic is being created, we need to build a symbol of the circuit so as to use the circuit in any other circuit and not to repeat the process of building the circuit from the scratch.
-   - To build the symbol, go to Design->New CellView->From CellView or simply use the bind key 'Y' and you will see the below table.
+   - To build the symbol, go to _Design->New CellView->From CellView_ or simply use the _bind key 'Y'_ and you will see the below table.
    
    - ![symbol](https://user-images.githubusercontent.com/100553237/155980257-8222f055-822e-4d31-b582-4a767b6a138c.jpg)
    - After clicking OK, you will see the following symbol of the nand gate circuit.
@@ -72,24 +72,40 @@ NAND gate as it is the series combination of an AND gate
 ### Params set for input voltage source A
 ![a_params](https://user-images.githubusercontent.com/100553237/155966093-b0dba843-ed76-4cb7-877c-c16b3927fea5.jpg)
 
-- You can see below the voltage, rise time, fall time, pulse width and time period of the clock pulse applied to another input.
+   - You can see below the voltage, rise time, fall time, pulse width and time period of the clock pulse applied to another input.
  
 ### Params set for input voltage source B
 ![b_params](https://user-images.githubusercontent.com/100553237/155943531-5e11044d-1853-4b4d-9537-6dee876e8701.png)
  
-- After the output capacitor and ground connections are made, the circuit looks like below.
+   - After the output capacitor and ground connections are made, the circuit looks like below.
+
 ![NAND_GATE_TB_schematic](https://user-images.githubusercontent.com/100553237/155943774-03d05755-f47c-4e58-aa03-78c603ec5b6d.png)
 
+
+* **PrimeWave definition**
+   - After the circuit is built without any connection errors, we need to import the model library files to perform the simulation.
+   - Go to _Tools->PrimeWave_ and you will see the below table. 
+![prime_wave_window](https://user-images.githubusercontent.com/100553237/155970189-db22c668-9c62-4caf-893f-d0e90d1970ad.jpg)
+
 * **Model files inclusion**
+   - Click on the Model Files.   
+   
 ![model_file_inclusion](https://user-images.githubusercontent.com/100553237/155970354-bbe9cc2d-859a-46aa-87ac-3d2608fc2b36.jpg)
 
+   - You can see that we have included the path for the hspice files and that we are checking the design for the TT corner but not for
+     SS or FF corner.
+
 * **Transient Settings**
-<img src="https://user-images.githubusercontent.com/100553237/155968623-ee8b2a8a-b9b3-470c-8d58-7b9542dd56e7.jpg" width=500 height=500>
+    - After the corner is being mentioned, we need to mention the transition time.
+<img src="(https://user-images.githubusercontent.com/100553237/155983262-878f629d-d91c-40e2-b33b-e6df751e6117.jpg)" width=500 height=500>
 
 * **waveform**
+    - Post everything is given as the input, we need to go to _'Simulation->Netlist and Run'_ or use _'Ctrl+Shift+R'_.
+    - So the waveform with the input values will be created and netlist will be generated
 ![waveform](https://user-images.githubusercontent.com/100553237/155943842-0f44b1f1-bfa7-4651-9bf5-39883a76e179.png)
 
 * **Netlist**
+    - To access the netlist, go to _'Simulation->Netlist'_, you can see the netlist for this circuit.
 <!--[primesi](https://github.com/psudheerk/Two_input_NAND_gate/files/8152118/primesim.txt)-->
 ```
 *  Generated for: PrimeSim
@@ -143,10 +159,9 @@ c4 vout gnd! c=1p
 
 .end
 ```
-* **PrimeWave definition**
-![prime_wave_window](https://user-images.githubusercontent.com/100553237/155970189-db22c668-9c62-4caf-893f-d0e90d1970ad.jpg)
 
 * **PrimeWave Log file**
+     - Post simulation, the log file will be generated and can be viewed for the purpose of debug.
 ```
                                    PrimeSim 
 
@@ -303,6 +318,7 @@ Thus, the two input NAND gate is being designed and simulated with the 28nm CMOS
 
 ## Author
  * Sudheer kumar pabbathi,Third year in Bachelor of Engineering in Electronics and Communication Engineering, Chaitanya Bharathi Institute of Electronics, Hyderabad-500075.
+ 
 ## References
 * [John Wawrzynek, CMOS Implementation Technologies (feature size ~ 28nm)](https://inst.eecs.berkeley.edu/~cs150/sp12/agenda/lec/lec09-CMOS.pdf)
 
